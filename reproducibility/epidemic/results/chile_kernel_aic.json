@@ -1,0 +1,15 @@
+{
+  "nll_learned": 5484.596225968414,
+  "npar_learned": 33,
+  "AIC_learned": 11035.192451936828,
+  "nll_frozen": 5517.959531366879,
+  "npar_frozen": 31,
+  "AIC_frozen": 11097.919062733758,
+  "delta_AIC_learned_minus_frozen": -62.72661079692989,
+  "learned_kernel_mean_days": 3.2819372549966586,
+  "learned_kernel_sd_days": 2.2089108507710864,
+  "kappa_learned": 16.29824185706735,
+  "kappa_frozen": 14.693765149002001,
+  "optimizer_success_learned": true,
+  "optimizer_success_frozen": true
+}
