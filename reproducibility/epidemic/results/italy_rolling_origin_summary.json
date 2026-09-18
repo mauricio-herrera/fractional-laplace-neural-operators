@@ -1,0 +1,12 @@
+{
+  "origins": [10,11,12,13,14,15,16,17],
+  "mean_gain_M2_minus_M0": 0.038951640772296944,
+  "median_gain_M2_minus_M0": 0.025109219819204658,
+  "positive_origins": 6,
+  "n_origins": 8,
+  "mean_M0_logscore": -6.169378180098722,
+  "mean_M2_logscore": -6.130426539326425,
+  "elapsed_seconds": 25.128074169158936,
+  "optimizer": "torch float64: Adam(150) + L-BFGS(max_iter=30)",
+  "protocol": "train windows 1..k, score k+1, k=10..17; R-persistence; NB log score per region-day"
+}
