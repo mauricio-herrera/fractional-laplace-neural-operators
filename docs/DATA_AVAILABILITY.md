@@ -1,27 +1,21 @@
-# Data availability and redistribution policy
+# Data availability and provenance
+
+## Controlled benchmarks
+
+The operator-learning benchmarks are generated synthetically by the frozen scripts under `code/operator_benchmark/`; aggregate and per-run outputs used for the manuscript are preserved in the v1.0.0 Zenodo archive.
 
 ## Chilean seismic application
 
-The primary seismic cohort is reconstructed from the relocated Chilean catalog associated with Potin et al., *A Revised Chilean Seismic Catalog from 1982 to Mid-2020*.
-
-- Dataset release: https://doi.org/10.5281/zenodo.13146436
-- Expected event table: `CHILE_SEISMICITY_RELOCATED.csv`
-- Expected SHA-256: `0ca7ca6b766c805fb110178c9b08fb438b8838442efcfdf32430de8f61e58362`
-
-The event-level Potin table is not redistributed in this GitHub repository because the current Zenodo record does not display an explicit redistribution license. Run:
-
-```bash
-python scripts/fetch_potin_catalog.py
-```
-
-to retrieve and verify the exact public source before rebuilding the seismic analysis.
+The source is the relocated Chilean catalog associated with Potin et al., Zenodo DOI `10.5281/zenodo.13146436`. The event-level source table is not redistributed here because the source record used for this release does not display an explicit redistribution license. `scripts/fetch_potin_catalog.py` retrieves the exact file and verifies SHA-256 `0ca7ca6b766c805fb110178c9b08fb438b8838442efcfdf32430de8f61e58362`. Aggregate fitted outputs are included.
 
 ## Epidemic application
 
-The Chile daily-case series is derived from the historical JHU CSSE series distributed through the OWID repository. The Italian regional series is from the official Dipartimento della Protezione Civile COVID-19 repository. Their source records and terms are listed in `reproducibility/epidemic/metadata/provenance.csv`.
+The Chile and Italy data/provenance freeze is documented in the archived v1.0.0 reproducibility package. The Zenodo release contains the exact analysis-ready files used by the frozen epidemic scripts together with their source and licensing records.
 
-The versioned Zenodo reproducibility archive will contain the frozen third-party epidemic snapshots used by the computations together with their provenance and original-source licensing notes.
+## Related foundation archive
 
-## Derived outputs
+DOI `10.5281/zenodo.21779954` is the reproducibility archive of the previously published CNSNS foundation. It is not the DOI of this fLNO repository.
 
-Aggregate fitted parameters, frozen numerical benchmark outputs, sensitivity summaries, and non-event-level derived tables produced by the authors are included with the reproducibility materials.
+## Present release DOI
+
+The version-specific archive of this v1.0.0 release is Zenodo DOI `10.5281/zenodo.22837154`. The all-versions DOI is `10.5281/zenodo.22837153`.

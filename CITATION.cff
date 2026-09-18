@@ -1,17 +1,22 @@
 cff-version: 1.2.0
-message: "If you use this software or reproducibility package, please cite the associated manuscript and archived release."
+message: "If you use this software or reproducibility package, please cite the associated manuscript and the archived v1.0.0 release."
 title: "Fractional Laplace Neural Operators: reproducibility package"
 authors:
   - family-names: "Herrera-Marín"
     given-names: "Mauricio"
     orcid: "https://orcid.org/0000-0002-9604-3077"
 version: 1.0.0
+doi: "10.5281/zenodo.22837154"
+date-released: 2026-09-18
 repository-code: "https://github.com/mauricio-herrera/fractional-laplace-neural-operators"
+url: "https://doi.org/10.5281/zenodo.22837154"
 license: MIT
 keywords:
   - neural operators
   - fractional Volterra equations
+  - memory
   - certified stability
+  - criticality
   - Hawkes processes
   - graphons
   - reproducibility
