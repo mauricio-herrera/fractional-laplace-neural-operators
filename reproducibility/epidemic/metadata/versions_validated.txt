@@ -1,0 +1,10 @@
+Validated clean re-execution environment used for this freeze:
+Python 3.13.5
+numpy 2.3.5
+scipy 1.17.0
+pandas 2.2.3
+matplotlib 3.10.8
+torch 2.10.0+cpu
+CPU only
+Validation date: 2026-09-18
+Note: scientific targets from the original bundle were reproduced within numerical optimization tolerance.
