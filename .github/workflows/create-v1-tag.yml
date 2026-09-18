@@ -1,0 +1,31 @@
+name: Create v1.0.0 tag
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/create-v1-tag.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create annotated v1.0.0 tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="437519856102ce0d1e30536f78265a724fed49af"
+          if git rev-parse -q --verify "refs/tags/v1.0.0" >/dev/null; then
+            echo "Tag v1.0.0 already exists."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a v1.0.0 "$target" -m "Fractional Laplace Neural Operators v1.0.0"
+          git push origin v1.0.0
