@@ -1,0 +1,27 @@
+{
+  "chile": {
+    "windows": 24,
+    "agreement_growth_decline": 0.9166666666666666,
+    "ci_excluding_R1": 8,
+    "width_ratio_median": 9.41207633327941,
+    "width_ratio_mean": 10.775766166807045,
+    "width_ratio_min": 4.303024691828987,
+    "width_ratio_max": 29.0376063322643,
+    "delta_AIC_learned_minus_frozen": -62.72661079692989,
+    "kernel_mean_days": 3.2819372549966586,
+    "kernel_sd_days": 2.2089108507710864,
+    "kappa": 16.29824185706735
+  },
+  "italy": {
+    "AIC_M0": 132831.87291462108,
+    "AIC_M1": 132701.21187334618,
+    "AIC_M2": 132685.0000834512,
+    "eps_hat": 0.03740611310599619,
+    "ell_hat_km": 402.94381579400084,
+    "single_split_gain": 0.04098998106208551,
+    "rolling_mean_gain": 0.038951640772296944,
+    "rolling_median_gain": 0.025109219819204658,
+    "rolling_positive_origins": 6,
+    "rolling_n_origins": 8
+  }
+}
