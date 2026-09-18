@@ -1,0 +1,30 @@
+name: Publish v1.0.0 release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-v1-release.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v1.0.0 >/dev/null 2>&1; then
+            echo "Release v1.0.0 already exists."
+            exit 0
+          fi
+          gh release create v1.0.0 \
+            --verify-tag \
+            --title "Fractional Laplace Neural Operators v1.0.0" \
+            --notes-file RELEASE_NOTES_v1.0.0.md
