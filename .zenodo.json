@@ -1,0 +1,21 @@
+{
+  "title": "Fractional Laplace Neural Operators: Reproducibility Package",
+  "description": "Code, frozen outputs, data provenance, supplementary material, and reproducibility workflows for fractional Laplace neural operators with certified stability and applications to seismic and epidemic dynamics.",
+  "creators": [
+    {
+      "name": "Herrera-Marín, Mauricio",
+      "orcid": "0000-0002-9604-3077",
+      "affiliation": "Universidad del Desarrollo"
+    }
+  ],
+  "upload_type": "software",
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": [
+    "neural operators",
+    "fractional Volterra equations",
+    "certified stability",
+    "Hawkes processes",
+    "graphons"
+  ]
+}
