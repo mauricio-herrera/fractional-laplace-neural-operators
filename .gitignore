@@ -1,0 +1,12 @@
+.DS_Store
+__MACOSX/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+*.aux
+*.log
+*.out
+data/raw/potin/CHILE_SEISMICITY_RELOCATED.csv
